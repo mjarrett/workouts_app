@@ -1,0 +1,325 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ 
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+*/
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Give the main body some padding so it's not against the side of the screen */
+
+body {
+    padding: 25px;
+    padding-top: 40px;
+    font-family: "Helvetica Neue" sans-serif;
+}
+
+/* When you add a new workout, give update text some style so it stands out */
+
+span.updateText {
+    color: purple;
+}
+
+
+/* Define easy, fail and success styles */
+.fail {
+    color: red;
+}
+
+.easy {
+    color: green;
+}
+
+.success {
+}
+
+/* Define recent style */
+span.recent {
+    font-weight: bold;
+}
+
+
+
+/** Remove most spacing between table cells.  */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* details.php positioning */
+
+/*.container {
+    position: relative;
+}
+
+.weightPlot {
+    position: relative;
+    top: 0px;
+    height: 500px
+}
+
+.weightTable {
+    position: relative;
+    top: 500px; 
+    left: 70px;
+}
+*/
+
+
+
+/* Nav floats at top of page */
+nav {
+    position: fixed;
+    top: 0%;
+    right: 0;
+    left: 0;
+    background-color: #DDD;
+    background-color: #ededed;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+/* Link color */
+
+a.topnav:link {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+/* visited link */
+a.topnav:visited {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+/* mouse over link */
+a.topnav:hover {
+    text-decoration: none;
+    color: #663366;
+
+}
+
+/* selected link */
+a.topnav:active {
+    text-decoration: none;    
+    color: #663366;
+}
+
+/******************************
+Pretty reviewTable code
+********************************/
+table.reviewTable a:link {
+    color: #666;
+    font-weight: bold;
+    text-decoration:none;
+}
+table.reviewTable a:visited {
+    color: #999999;
+    font-weight:bold;
+    text-decoration:none;
+}
+table.reviewTable a:active,
+table.reviewTable a:hover {
+    color: #bd5a35;
+    text-decoration:underline;
+}
+table.reviewTable {
+    font-family:Arial, Helvetica, sans-serif;
+    color:#666;
+    font-size:12px;
+    text-shadow: 1px 1px 0px #fff;
+    background:#fafafa;
+    /*margin:20px;*/
+    border:#ccc 1px solid;
+
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+
+    -moz-box-shadow: 0 1px 2px #d1d1d1;
+    -webkit-box-shadow: 0 1px 2px #d1d1d1;
+    box-shadow: 0 1px 2px #d1d1d1;
+}
+table.reviewTable th {
+    padding:21px 25px 22px 25px;
+    border-top:1px solid #fafafa;
+    border-bottom:1px solid #e0e0e0;
+
+    background: #ededed;
+    /*
+    background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+    background: -moz-linear-gradient(top,  #ededed,  #ebebeb);*/
+}
+table.reviewTable th:first-child {
+    text-align: left;
+    padding-left:10px;
+}
+table.reviewTable tr:first-child th:first-child {
+    -moz-border-radius-topleft:3px;
+    -webkit-border-top-left-radius:3px;
+    border-top-left-radius:3px;
+}
+table.reviewTable tr:first-child th:last-child {
+    -moz-border-radius-topright:3px;
+    -webkit-border-top-right-radius:3px;
+    border-top-right-radius:3px;
+}
+table.reviewTable tr {
+    text-align: center;
+    padding-left:10px;
+}
+table.reviewTable td:first-child {
+    text-align: left;
+    padding-left:20px;
+    border-left: 0;
+}
+table.reviewTable td {
+    padding:5px;
+    border-top: 1px solid #ffffff;
+    border-bottom:1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+
+v   /* background: #fafafa;*/
+/*    background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+    background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa); */
+}
+
+
+table.reviewTable tr:hover td {
+   
+    background: #f2f2f2; 
+   /* background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+    background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);
+*/
+}
+
+.highlighted {
+    background: #e0e0e0;
+}
+table.reviewTable tr.highlighted:hover td {
+   background: #e0e0e0;
+}
+/**********************************************/
+
+
+
+/*Move submit buttons so it's easier to click on mobile*/
+.inputSubmit {
+    position: relative;
+    left: 100px;
+}
+
+/*Place the loading icon directly under the submit button*/
+.preloader {
+    position:relative;
+    left: 100px;
+}
+
+/*Addition styles for "more opitons text*/
+.moreInputText {
+    color: grey;
+    font-size: 75%;
+}
+
+.moreInputText:hover {
+    color: #663366;
+}
+
+
+/*Title of each input table*/
+.title {
+
+}
+
+.title:hover {
+    color: #663366;
+}
