@@ -1,7 +1,0 @@
-Some kind of calendar to see what you've done/plan to do
-
-A way to review cumulative distance run/biked over previous weeks/months etc
-
-jquery to make prettier show/hide element functions
-
-ajax for uploading workouts without re-loading pages
