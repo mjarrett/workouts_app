@@ -1,4 +1,4 @@
-<?php require 'check_user_cookie.php'; 
+<?php require 'php/check_user_cookie.php'; 
 session_start(); 
 $updateText = $_SESSION['updateText'];
 $_SESSION['updateText'] = '';
@@ -29,7 +29,7 @@ $_SESSION['updateText'] = '';
     </head>
 
 
-<?php require 'menu.php'; ?>
+<?php require 'php/menu.php'; ?>
 
 <body>
 
@@ -46,7 +46,7 @@ echo "<span id=\"topUpdateText\" class=\"updateText\">$updateText</span>";
 <br />
 
 
-<?php require 'strength_input_table.php'; ?>
+<?php require 'php/strength_input_table.php'; ?>
 
 <br /> 
 <br />
@@ -55,21 +55,21 @@ echo "<span id=\"topUpdateText\" class=\"updateText\">$updateText</span>";
 <h2>Cardio</h2> 
 <br />
 
-<?php require 'cardio_input_table.php'; ?>
+<?php require 'php/cardio_input_table.php'; ?>
 
 
 <br />
 <br />
 
 
-<?php require 'add_weight_form.php'; ?>
+<?php require 'php/add_weight_form.php'; ?>
 
 
 <br />
 <br />
 
 
-<?php require 'note_input.php'; ?>
+<?php require 'php/note_input.php'; ?>
 
 </body>
 </HTML>
