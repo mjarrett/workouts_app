@@ -20,10 +20,10 @@ $xdata = unserialize(urldecode(($_GET['date'])));  //include xdata to get proper
 
 
 
-$maxy = max($ydata) + 20;
-$miny = min($ydata) - 20;
-$maxx = max($xdata) + 1000;
-$minx = min($xdata);
+$maxy = round(max($ydata) + 20);
+$miny = round(min($ydata) - 20);
+$maxx = round(max($xdata) + 1000);
+$minx = round(min($xdata));
 
 // Only plot the last $cut timepoints
 //$cut = 10;
