@@ -15,6 +15,10 @@ require_once ('jpgraph/jpgraph_date.php');
 // Decode then unserialize GET data sent from details.php
 $ydata = unserialize(urldecode(($_GET['points'])));
 $xdata = unserialize(urldecode(($_GET['date'])));  //include xdata to get proper time labelling on x axis.
+
+
+
+
 $maxy = max($ydata) + 20;
 $miny = min($ydata) - 20;
 $maxx = max($xdata) + 1000;
