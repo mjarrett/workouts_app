@@ -124,7 +124,11 @@ echo "<span id='$exercise.Text' onclick=\"showEl('$exercise')\" onmouseover=\"hi
           //Add weight variable to "points" array that will be passed to plot funtion 
      	  //(unshift adds to beginning of array)
 
-          array_unshift($points,$row['weight']);
+
+	  $onerepmax = $row['weight'] * $row['reps'] * 0.0333 + $row['weight'];
+
+	  //array_unshift($points,$row['weight']);
+          array_unshift($points,$onerepmax);
           array_unshift($date,strtotime($row['date']));     
 	  }  
     }

@@ -19,6 +19,7 @@ $xdata = unserialize(urldecode(($_GET['date'])));  //include xdata to get proper
 
 
 
+
 $maxy = max($ydata) + 20;
 $miny = min($ydata) - 20;
 $maxx = max($xdata) + 1000;
@@ -65,7 +66,7 @@ $graph->xaxis->scale->SetTimeAlign(MONTHADJ_6);
 //$graph->xaxis->scale->ticks->Set(*60*60);
 
 // Setup Y-axis title
-$graph->yaxis->title->Set('(Weight (lbs))');
+$graph->yaxis->title->Set('(1RM Weight (lbs))');
  
 
 
